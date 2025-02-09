@@ -1,0 +1,20 @@
+def main():
+    x = input("What's your favourite animal? ").capitalize()
+    print(f"That {ani(x)} is alright...")
+    col = input("What's your favourite colour? ").capitalize()
+    print(f"A {colour(col)} {ani(x)} is interesting.")
+    pet = f"{col} {x}"
+    amount = int(input(f"How many {pet}s do you have? "))
+    
+    if amount >= 3:
+        print("That's a lot!")
+    else: 
+        print("That's pretty cool!")
+        
+def colour(f):
+    return f
+
+def ani(y):
+    return y
+
+main()

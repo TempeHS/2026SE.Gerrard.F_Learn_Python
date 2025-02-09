@@ -1,0 +1,9 @@
+def question():
+    x = input("What's your name? ").title()
+    match x:    
+        case "Van" | "Ryan" | "Jackson" | "Dexter" | "Nic": 
+            print("Hey I know you.")
+        case _:
+            print("Yo who da hell is you.")
+
+question()

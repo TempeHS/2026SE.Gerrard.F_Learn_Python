@@ -1,0 +1,32 @@
+def question():
+    n = get_amount()
+    roar(n)
+
+def get_amount():
+    n = int(input("Provide a number: "))
+    if n > 0: 
+        return n  
+    else:
+        for i in range(len(phrases)):
+            print(phrases[i])
+
+def roar(y):
+    for _ in range(y):
+        print(f"{y} roar(s) for you, \"{y}\" times. ")
+
+def inquiry():
+    while True:
+        n = int(input("Provide a number: "))
+        if n <= 0:
+            print(phrases[0])
+            continue
+        else:
+            print(f"{n} roar(s), {n} times!")
+            break 
+
+phrases = ["Please input a valid number", "Please try again", "Please insert a POSITIVE number"]   
+
+for i in range(len(phrases)):
+    print(i, phrases[i])
+
+#44 minutes into Loops
