@@ -1,11 +1,12 @@
 def main():
-    x = question(input("What do you need? ")).
+    x = question(input("What do you need? ").casefold())
 
 
 def question(x):
-    replace = x.find("H")
-    if replace == True:
+    if x.startswith("hello"):
         print("No money")
+    elif x.startswith("h"):
+        print("$20")
     else:
         print("$100")
 
